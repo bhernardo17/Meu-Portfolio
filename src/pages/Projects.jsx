@@ -1,6 +1,6 @@
 import React from 'react';
 import ProjectCard from '../components/ProjectCard';
-import '../styles/components/Projects.css'; // Caminho corrigido
+import '../styles/components/projects.css'; // Caminho corrigido
 
 const Projects = () => {
   const projects = [

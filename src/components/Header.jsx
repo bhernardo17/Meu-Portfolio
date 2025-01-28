@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/components/Header.css'; // Caminho corrigido
+import '../styles/components/header.css'; // Caminho corrigido
 
 const Header = () => {
     return (
