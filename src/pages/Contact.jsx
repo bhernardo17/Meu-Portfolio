@@ -6,8 +6,8 @@ const Contact = () => {
     <section id="contato" className="contact">
       <h2>📩 <strong>Entre em Contato</strong></h2>
       <p>Email: bhernardooficial@gmail.com</p>
-      <p3>GitHub: bhernardo17</p3>
-      <p>LinkedIn: <a href="#" target="_blank" rel="noopener noreferrer">Meu LinkedIn</a></p>
+      <p>GitHub: <a href="https://github.com/bhernardo17" target="_blank" rel="noopener noreferrer">@bhernardo17</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/bhernardo-ramos-vieira-50b343272/" target="_blank" rel="noopener noreferrer">Meu LinkedIn</a></p>
     </section>
   );
 };
