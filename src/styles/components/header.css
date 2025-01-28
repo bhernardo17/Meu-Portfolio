@@ -63,18 +63,3 @@
   font-size: 1.5rem;
   cursor: pointer;
 }
-
-/* Responsividade */
-@media (max-width: 768px) {
-  .nav {
-    display: none; /* Esconde o menu em telas pequenas */
-  }
-
-  .menu-icon {
-    display: block; /* Mostra o ícone do menu */
-  }
-
-  .header {
-    padding: 1rem;
-  }
-}
