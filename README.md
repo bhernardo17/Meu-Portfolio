@@ -18,6 +18,7 @@ Este portfólio foi desenvolvido com o objetivo de compartilhar meu trabalho, ex
 🎯 Objetivo
 
 Este portfólio é uma vitrine do meu crescimento profissional e da minha paixão por tecnologia. Além disso, ele reflete meu compromisso em criar soluções inovadoras e impactantes.
+
 📩 Contato
 
 Se quiser saber mais sobre mim ou colaborar em algum projeto, fique à vontade para me contatar:
