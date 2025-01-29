@@ -1,63 +1,80 @@
-/* Servico.css */
-.servico {
-    padding: 4rem 2rem;
-    background: linear-gradient(180deg, #121212, #1E1E1E); /* Gradiente de fundo */
+.servico-container {
+    padding: 3rem 1.5rem; /* Reduzi o padding geral */
+    background-color: #387091;
     color: #e0e0e0;
     text-align: center;
   }
   
-  .servico h2 {
-    font-size: 2.5rem;
+  .servico-titulo {
+    font-size: 2rem; /* Reduzi o tamanho do título */
     color: #ffffff;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
   
-  .servico-grid {
+  .servico-descricao {
+    margin-bottom: 1.5rem; /* Menor espaçamento entre título e descrição */
+    font-size: 1rem; /* Reduzi o tamanho da fonte */
+  }
+  
+  .servico-flex {
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
     justify-content: center;
+    gap: 0.8rem; /* Menor espaçamento entre os cards */
   }
   
   .servico-card {
-    background: #1E1E1E;
-    border: 1px solid rgba(255, 255, 255, 0.1); /* Borda sutil */
-    border-radius: 12px;
-    padding: 2rem;
-    width: 320px;
-    text-align: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px; /* Bordas ligeiramente menores */
+    overflow: hidden;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25); /* Menor sombra */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+    color: #333;
+    background-color: #ffffff;
+    padding: 0.8rem; /* Menor padding interno */
   }
   
   .servico-card:hover {
-    transform: translateY(-10px); /* Animação ao hover */
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+    transform: translateY(-3px); /* Reduzi o efeito hover */
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.4);
   }
   
-  .servico-card h3 {
-    font-size: 1.8rem;
-    color: #ffffff;
-    margin-bottom: 1rem;
+  .servico-card .servico-icone {
+    font-size: 2.5rem; /* Ícone menor */
+    margin-bottom: 0.8rem;
   }
   
-  .servico-card p {
-    font-size: 1rem;
-    color: #bbbbbb;
-    margin-bottom: 1rem;
+  .servico-card .servico-titulo-card {
+    font-size: 1.2rem; /* Título menor */
+    color: #387091;
+    margin-bottom: 0.4rem;
   }
   
-  .servico-card a {
-    display: inline-block;
-    padding: 0.5rem 1.5rem;
-    background: linear-gradient(90deg, #00ADB5, #393E46); /* Gradiente no botão */
-    color: #fff;
-    border-radius: 25px;
-    text-decoration: none;
-    transition: background 0.3s ease;
+  .servico-card .servico-descricao-card {
+    font-size: 0.9rem; /* Texto menor */
+    color: #444;
   }
   
-  .servico-card a:hover {
-    background: linear-gradient(90deg, #00FFA3, #00ADB5);
+  /* Estilos para cards horizontais */
+  .servico-card.horizontal {
+    flex: 1 1 calc(5% - 0.8rem); /* Ajusta para ocupar 45% da linha */
+    max-width: calc(45% - 0.8rem);
+    aspect-ratio: 16 / 10; /* Proporção horizontal ajustada */
+  }
+  
+  /* Estilos para cards verticais */
+  .servico-card.vertical {
+    flex: 1 1 calc(30% - 0.8rem); /* Ajusta para ocupar 30% da linha */
+    max-width: calc(30% - 0.8rem);
+    aspect-ratio: 3 / 5; /* Proporção vertical ajustada */
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .servico-card.horizontal,
+    .servico-card.vertical {
+      flex: 1 1 calc(100% - 0.8rem); /* Ocupa linha inteira em telas menores */
+      max-width: 100%;
+    }
   }
   

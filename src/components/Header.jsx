@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/components/header.css'; // Caminho corrigido
+import '../styles/components/header.css'; 
 
 const Header = () => {
     return (
@@ -7,8 +7,11 @@ const Header = () => {
         <div className="logo">Bhe</div>
         <nav className="nav">
           <ul className="nav-list">
-            <li><a href="#sobre">Sobre</a></li>
+            
+            <li><a href="#galeria">Galeria</a></li>
+            <li><a href="#servico">Serviços</a></li>
             <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#sobre">Sobre</a></li>
             <li><a href="#contato">Contato</a></li>
           </ul>
         </nav>
