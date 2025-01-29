@@ -1,0 +1,15 @@
+.about, .contact {
+    background: linear-gradient(180deg, #1E1E1E, #121212); /* Gradiente de fundo */
+    color: #e0e0e0; /* Texto claro */
+}
+
+.about h2, .contact h2 {
+    color: #FFFFFF; /* Branco para destaque */
+    font-size: 2.5rem; /* Maior impacto */
+    margin-bottom: 1.5rem;
+}
+
+.about p, .contact p {
+    color: #BBBBBB; /* Cinza claro */
+    font-size: 1.2rem;
+}

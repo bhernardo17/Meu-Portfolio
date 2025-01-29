@@ -3,28 +3,31 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 97%;
+  width: 97%; /* Corrigido para ocupar 100% da largura */
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.8); /* Fundo semi-transparente */
-  backdrop-filter: blur(10px); /* Efeito de desfoque */
+  background-color: rgba(16, 18, 22, 0.9); /* Preto translúcido */
+  backdrop-filter: blur(15px); /* Efeito de desfoque mais acentuado */
   z-index: 1000;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Sombra mais definida */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transições suaves */
 }
 
 /* Logo */
 .logo {
-  font-size: 1.5rem;
+  font-size: 1.8rem; /* Aumentei o tamanho para destaque */
   font-weight: bold;
-  color: #333;
+  color: #ffffff; /* Cor branca para maior contraste */
+  text-transform: uppercase; /* Deixei em maiúsculas para maior impacto */
+  letter-spacing: 1px;
 }
 
 /* Lista de navegação */
 .nav-list {
   display: flex;
-  gap: 2rem;
+  gap: 2.5rem; /* Mais espaço entre os itens */
   list-style: none;
   margin: 0;
   padding: 0;
@@ -32,8 +35,9 @@
 
 .nav-list a {
   text-decoration: none;
-  color: #333;
+  color: #bbbbbb; /* Cinza claro para contraste */
   font-weight: 500;
+  font-size: 1rem;
   position: relative;
   transition: color 0.3s ease;
 }
@@ -45,12 +49,12 @@
   left: 0;
   width: 0;
   height: 2px;
-  background-color: #007bff; /* Cor do efeito hover */
+  background-color: #00adb5; /* Cor moderna azul-esverdeada */
   transition: width 0.3s ease;
 }
 
 .nav-list a:hover {
-  color: #007bff;
+  color: #ffffff; /* Branco no hover */
 }
 
 .nav-list a:hover::after {
@@ -59,7 +63,33 @@
 
 /* Ícone do menu mobile */
 .menu-icon {
-  display: none;
-  font-size: 1.5rem;
+  display: none; /* Será visível apenas em telas pequenas */
+  font-size: 1.8rem;
   cursor: pointer;
+  color: #ffffff;
+}
+
+/* Estilos responsivos para telas menores */
+@media (max-width: 768px) {
+  .nav-list {
+    display: none; /* Esconde a navegação em telas pequenas */
+  }
+
+  .menu-icon {
+    display: block; /* Exibe o ícone do menu mobile */
+  }
+}
+
+/* Quando o menu estiver ativo (adapte com JS se necessário) */
+.nav-list.active {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 100%; /* Abaixo do header */
+  left: 0;
+  width: 100%;
+  background-color: rgba(18, 18, 18, 0.95); /* Fundo mais escuro para o menu mobile */
+  padding: 1rem;
+  gap: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }

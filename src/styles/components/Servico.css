@@ -1,0 +1,63 @@
+/* Servico.css */
+.servico {
+    padding: 4rem 2rem;
+    background: linear-gradient(180deg, #121212, #1E1E1E); /* Gradiente de fundo */
+    color: #e0e0e0;
+    text-align: center;
+  }
+  
+  .servico h2 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 2rem;
+  }
+  
+  .servico-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
+  
+  .servico-card {
+    background: #1E1E1E;
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Borda sutil */
+    border-radius: 12px;
+    padding: 2rem;
+    width: 320px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .servico-card:hover {
+    transform: translateY(-10px); /* Animação ao hover */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+  }
+  
+  .servico-card h3 {
+    font-size: 1.8rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+  }
+  
+  .servico-card p {
+    font-size: 1rem;
+    color: #bbbbbb;
+    margin-bottom: 1rem;
+  }
+  
+  .servico-card a {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    background: linear-gradient(90deg, #00ADB5, #393E46); /* Gradiente no botão */
+    color: #fff;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+  }
+  
+  .servico-card a:hover {
+    background: linear-gradient(90deg, #00FFA3, #00ADB5);
+  }
+  
