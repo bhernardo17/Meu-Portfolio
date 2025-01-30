@@ -1,80 +1,61 @@
+.Servico {
+  padding: 3rem 1rem;
+  background-color: #f8fafc;
+}
+
 .servico-container {
-    padding: 3rem 1.5rem; /* Reduzi o padding geral */
-    background-color: #387091;
-    color: #e0e0e0;
-    text-align: center;
-  }
-  
-  .servico-titulo {
-    font-size: 2rem; /* Reduzi o tamanho do título */
-    color: #ffffff;
-    margin-bottom: 1rem;
-  }
-  
-  .servico-descricao {
-    margin-bottom: 1.5rem; /* Menor espaçamento entre título e descrição */
-    font-size: 1rem; /* Reduzi o tamanho da fonte */
-  }
-  
-  .servico-flex {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0.8rem; /* Menor espaçamento entre os cards */
-  }
-  
-  .servico-card {
-    border-radius: 10px; /* Bordas ligeiramente menores */
-    overflow: hidden;
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25); /* Menor sombra */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    text-align: left;
-    color: #333;
-    background-color: #ffffff;
-    padding: 0.8rem; /* Menor padding interno */
-  }
-  
-  .servico-card:hover {
-    transform: translateY(-3px); /* Reduzi o efeito hover */
-    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.4);
-  }
-  
-  .servico-card .servico-icone {
-    font-size: 2.5rem; /* Ícone menor */
-    margin-bottom: 0.8rem;
-  }
-  
-  .servico-card .servico-titulo-card {
-    font-size: 1.2rem; /* Título menor */
-    color: #387091;
-    margin-bottom: 0.4rem;
-  }
-  
-  .servico-card .servico-descricao-card {
-    font-size: 0.9rem; /* Texto menor */
-    color: #444;
-  }
-  
-  /* Estilos para cards horizontais */
-  .servico-card.horizontal {
-    flex: 1 1 calc(5% - 0.8rem); /* Ajusta para ocupar 45% da linha */
-    max-width: calc(45% - 0.8rem);
-    aspect-ratio: 16 / 10; /* Proporção horizontal ajustada */
-  }
-  
-  /* Estilos para cards verticais */
-  .servico-card.vertical {
-    flex: 1 1 calc(30% - 0.8rem); /* Ajusta para ocupar 30% da linha */
-    max-width: calc(30% - 0.8rem);
-    aspect-ratio: 3 / 5; /* Proporção vertical ajustada */
-  }
-  
-  /* Responsividade */
-  @media (max-width: 768px) {
-    .servico-card.horizontal,
-    .servico-card.vertical {
-      flex: 1 1 calc(100% - 0.8rem); /* Ocupa linha inteira em telas menores */
-      max-width: 100%;
-    }
-  }
-  
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.servico-flex {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.servico-card {
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 2rem;
+  background-color: #ffffff;
+}
+
+.servico-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.servico-icone {
+  font-size: 3rem;
+  color: #2563eb;
+}
+
+.servico-titulo {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  color: #1e293b;
+}
+
+.servico-descricao {
+  font-size: 1rem;
+  color: #475569;
+  margin-bottom: 2rem;
+}
+
+.servico-botao {
+  text-decoration: none;
+  margin-top: 10%;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+}
+
+.certificate-image {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}

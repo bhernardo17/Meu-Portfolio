@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaArrowLeft, FaArrowRight, FaCode, FaLaptopCode, FaStar, FaHeart, FaPalette } from "react-icons/fa";
+import { FaArrowLeft, FaArrowRight, FaCode, FaLaptopCode, FaStar, FaHeart, FaPalette, FaCertificate } from "react-icons/fa";
 import "../styles/components/About.css";
 
 const About = () => {
@@ -70,6 +70,68 @@ const About = () => {
           <FaPalette className="inline-block text-pink-400" size={16} />{" "}
           Além de codificar, adoro explorar minha criatividade em design gráfico, edição de vídeos e criação de personagens. Também curto atividades ao ar livre para equilibrar corpo e mente.
         </p>
+      ),
+    },
+    {
+      title: "Certificado: Lógica de Programação",
+      content: (
+        <div className="mt-4 flex flex-col items-center">
+          <p>
+            <FaCertificate className="inline-block text-purple-400" size={20} />{" "}
+            <strong>Certificado de Lógica de Programação</strong>
+          </p>
+          <div className="mt-4 w-full max-w-xs h-64 overflow-hidden rounded-lg shadow-lg flex items-center justify-center">
+            <img
+              src="/images/logica-programacao-certificado.png" // Substitua pelo caminho correto
+              alt="Certificado de Lógica de Programação"
+              className="certificate-image"
+            />
+          </div>
+          <div className="mt-4 text-left w-full max-w-xs">
+            <p>
+              <strong>Bhernardo Ramos Vieira</strong> concluiu com sucesso o curso de Lógica de Programação da Trybe, com carga horária de 10 horas.
+            </p>
+            <p className="mt-2">
+              Durante o curso, foram abordados:
+            </p>
+            <ul className="list-disc list-inside mt-2">
+              <li>Importância da lógica de programação</li>
+              <li>Conceitos fundamentais de algoritmos</li>
+              <li>Estruturas de seleção e repetição</li>
+            </ul>
+          </div>
+        </div>
+      ),
+    },
+    {
+      title: "Certificado: JavaScript do Zero",
+      content: (
+        <div className="mt-4 flex flex-col items-center">
+          <p>
+            <FaCertificate className="inline-block text-purple-400" size={20} />{" "}
+            <strong>Certificado de JavaScript do Zero</strong>
+          </p>
+          <div className="mt-4 w-full max-w-xs h-64 overflow-hidden rounded-lg shadow-lg flex items-center justify-center">
+            <img
+              src="/images/javascript-zero-certificado.png" 
+              alt="Certificado de JavaScript do Zero"
+              className="certificate-image"
+            />
+          </div>
+          <div className="mt-4 text-left w-full max-w-xs">
+            <p>
+              <strong>Bhernardo Ramos Vieira</strong> concluiu o Curso JavaScript do Zero, alcançando, no mínimo, 80% de aproveitamento, com carga horária de 10 horas.
+            </p>
+            <p className="mt-2">
+              Durante o curso, foram abordados:
+            </p>
+            <ul className="list-disc list-inside mt-2">
+              <li>Fundamentos da linguagem JavaScript</li>
+              <li>Manipulação do DOM</li>
+              <li>Eventos e programação assíncrona</li>
+            </ul>
+          </div>
+        </div>
       ),
     },
   ];
