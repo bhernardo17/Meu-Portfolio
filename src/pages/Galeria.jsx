@@ -8,6 +8,11 @@ function Galeria() {
     { id: 3, src: "/images/desenho3.jpg", alt: "Desenho Horizontal", orientacao: "horizontal" },
     { id: 4, src: "/images/7.png", alt: "Desenho Vertical", orientacao: "vertical" },
     { id: 5, src: "/images/imagem4.png", alt: "Desenho Horizontal", orientacao: "horizontal" },
+    { id: 6, src: "/images/Frame7.png", alt: "Desenho Vertical", orientacao: "vertical" },
+    { id: 7, src: "/images/Group8.png", alt: "Desenho Horizontal", orientacao: "horizontal" },
+    { id: 8, src: "/images/desenho11.png", alt: "Desenho Vertical", orientacao: "vertical" },
+    { id: 9, src: "/images/Frame.png", alt: "Desenho Horizontal", orientacao: "horizontal" },
+    { id: 10, src: "/images/germs.png", alt: "Desenho Vertical", orientacao: "vertical" },
   ];
 
   return (
