@@ -5,14 +5,14 @@ import '../styles/components/projects.css'; // Caminho corrigido
 const Projects = () => {
   const projects = [
     {
-      title: 'Projeto 1',
-      description: 'Descrição breve do projeto.',
-      link: '#',
+      title: 'EasyTatto',
+      description: 'Projeto pessoal que tem como objetivo conectar Tatuador e Cliente.',
+      link: 'https://github.com/bhernardo17/Easy-Tatto-v1',
     },
     {
-      title: 'Projeto 2',
-      description: 'Descrição breve do projeto.',
-      link: '#',
+      title: 'PGS',
+      description: 'Sistema de Gestão de Contratos de Sistemas da PMF. Link levara para as telas e nada mais além disso já que é um Sistema para a Prefeitura.',
+      link: 'https://github.com/bhernardo17/PGS-v2',
     },
   ];
 

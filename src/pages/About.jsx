@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { FaArrowLeft, FaArrowRight, FaCode, FaLaptopCode, FaStar, FaHeart, FaPalette } from "react-icons/fa";
 import "../styles/components/About.css";
 
 const About = () => {
@@ -9,11 +10,14 @@ const About = () => {
       title: "Sobre Mim",
       content: (
         <div>
-          <p>🌟 <strong>Portfólio Pessoal de Bhernardo Ramos Vieira</strong></p>
           <p>
-            Bem-vindo ao meu repositório de portfólio! Este projeto foi criado
-            para compartilhar minha jornada como desenvolvedor, apresentando
-            minhas habilidades, projetos e aspirações.
+            <FaStar className="inline-block text-yellow-400" size={20} />{" "}
+            <strong>Portfólio Pessoal de Bhernardo Ramos Vieira</strong>
+          </p>
+          <p className="mt-4">
+            Olá! Sou um desenvolvedor apaixonado por tecnologia e design. Este portfólio foi
+            criado para apresentar minhas habilidades, projetos e aspirações na área de
+            tecnologia.
           </p>
         </div>
       ),
@@ -21,11 +25,10 @@ const About = () => {
     {
       title: "Projetos Concluídos",
       content: (
-        <ul>
+        <ul className="mt-4">
           <li>
-            <strong>PGS:</strong> Um sistema de gestão de contratos desenvolvido
-            para a prefeitura, otimizando processos e trazendo eficiência ao
-            setor público.
+            <strong>PGS:</strong> <FaLaptopCode className="inline-block text-blue-400" size={16} />{" "}
+            Sistema de gestão de contratos para a prefeitura, otimizado para melhorar processos no setor público.
           </li>
         </ul>
       ),
@@ -33,10 +36,10 @@ const About = () => {
     {
       title: "Projetos em Andamento",
       content: (
-        <ul>
+        <ul className="mt-4">
           <li>
-            <strong>EasyTatto:</strong> Projeto pessoal em desenvolvimento que
-            reflete minha busca por inovação e aprendizado.
+            <strong>EasyTatto:</strong>{" "}
+            <FaCode className="inline-block text-green-400" size={16} /> Projeto inovador em desenvolvimento, refletindo minha busca contínua por aprendizado.
           </li>
         </ul>
       ),
@@ -44,7 +47,7 @@ const About = () => {
     {
       title: "Tecnologias e Ferramentas",
       content: (
-        <ul>
+        <ul className="mt-4">
           <li><strong>Frontend:</strong> HTML, CSS, JavaScript</li>
           <li><strong>Frameworks:</strong> React, TailwindCSS</li>
           <li><strong>Design:</strong> Figma, Adobe Photoshop</li>
@@ -55,18 +58,17 @@ const About = () => {
     {
       title: "Meu Objetivo",
       content: (
-        <p>
-          Meu maior sonho é construir uma carreira sólida na área de tecnologia,
-          criando soluções que impactem positivamente a vida das pessoas.
+        <p className="mt-4">
+          Meu maior objetivo é construir uma carreira sólida como desenvolvedor, criando soluções que impactem a vida das pessoas e alcançando estabilidade profissional para realizar meus sonhos pessoais.
         </p>
       ),
     },
     {
       title: "Hobbies e Interesses",
       content: (
-        <p>
-          Quando não estou codificando, gosto de explorar minha criatividade em
-          design gráfico, edição de vídeos e criação de personagens.
+        <p className="mt-4">
+          <FaPalette className="inline-block text-pink-400" size={16} />{" "}
+          Além de codificar, adoro explorar minha criatividade em design gráfico, edição de vídeos e criação de personagens. Também curto atividades ao ar livre para equilibrar corpo e mente.
         </p>
       ),
     },
@@ -91,15 +93,15 @@ const About = () => {
         <div className="carousel-controls flex justify-center mt-4">
           <button
             onClick={handlePrev}
-            className="px-4 py-2 bg-gray-300 rounded-l hover:bg-gray-400"
+            className="px-4 py-2 bg-gray-300 rounded-l hover:bg-gray-400 flex items-center"
           >
-            &#8592; Anterior
+            <FaArrowLeft className="mr-2" /> Anterior
           </button>
           <button
             onClick={handleNext}
-            className="px-4 py-2 bg-gray-300 rounded-r hover:bg-gray-400"
+            className="px-4 py-2 bg-gray-300 rounded-r hover:bg-gray-400 flex items-center"
           >
-            Próximo &#8594;
+            Próximo <FaArrowRight className="ml-2" />
           </button>
         </div>
       </div>
