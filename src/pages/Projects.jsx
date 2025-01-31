@@ -12,7 +12,7 @@ const Projects = () => {
     {
       title: 'PGS',
       description: 'Sistema de Gestão de Contratos de Sistemas da PMF. Link levara para as telas e nada mais além disso já que é um Sistema para a Prefeitura.',
-      link: 'https://github.com/bhernardo17/PGS-v2',
+      link: '#',
     },
   ];
 
