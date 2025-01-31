@@ -6,6 +6,7 @@ import Contact from './pages/Contact';
 import Servico from './pages/Servico';
 import Galeria from './pages/Galeria';
 import Footer from './components/Footer';
+import { Analytics } from "@vercel/analytics/react"
 import './styles/global.css';
 
 function App() {
