@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/components/contact.css'; // Caminho corrigido
+import '../styles/components/Contact.css'; // Caminho corrigido
 
 const Contact = () => {
   return (
