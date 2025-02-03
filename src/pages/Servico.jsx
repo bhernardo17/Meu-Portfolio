@@ -10,7 +10,7 @@ function Servico() {
         "Desenvolvimento de logos profissionais utilizando Figma, refletindo a identidade única da sua marca.",
       icone: "🎨",
       botaoTexto: "Ver Galeria",
-      link: "#galeria",
+      link: "#galeria-logos",
       layout: "horizontal",
     },
     {
