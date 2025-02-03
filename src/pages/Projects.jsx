@@ -11,7 +11,7 @@ const Projects = () => {
     },
     {
       title: 'PGS',
-      description: 'Sistema de Gestão de Contratos de Sistemas da PMF. Link levara para as telas e nada mais além disso já que é um Sistema para a Prefeitura.',
+      description: 'Sistema de Gestão de Contratos de Sistemas da PMF. Funcional na prefeitura porém por conta de ser um sistema privado não tenho autorização para mostrar o código.',
       link: '#',
     },
   ];

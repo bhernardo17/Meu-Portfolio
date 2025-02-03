@@ -1,0 +1,49 @@
+.galeria-logos {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    text-align: center; /* Centraliza o texto do título */
+  }
+
+  .galeriaLog-titulo {
+    font-size: 2.5rem;
+    color: #387091;
+    margin-bottom: 1rem;
+  }
+  .galeriaLogo-descricao {
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    color: rgba(58, 57, 57, 0.664);
+  }
+  
+  
+  .galeria-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Reduz o tamanho mínimo dos contêineres */
+    gap: 1rem;
+    padding: 1rem;
+    max-width: 800px; /* Limita a largura máxima da galeria */
+    margin: 0 auto; /* Centraliza a galeria na página */
+  }
+  
+  .logo-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #387091;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 0.5rem; /* Reduz o padding para contêineres menores */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .logo-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .logo-image {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+  }

@@ -15,9 +15,10 @@ const About = () => {
             <strong>Portfólio Pessoal de Bhernardo Ramos Vieira</strong>
           </p>
           <p className="mt-4">
-            Olá! Sou um desenvolvedor apaixonado por tecnologia e design. Este portfólio foi
-            criado para apresentar minhas habilidades, projetos e aspirações na área de
-            tecnologia.
+          Olá! Sou um desenvolvedor apaixonado por tecnologia e design. 
+          Atualmente, estou cursando Análise e Desenvolvimento de Sistemas no UNICESUSC, 
+          com previsão de conclusão em 2025. Este portfólio foi criado para apresentar minhas habilidades, 
+          projetos e aspirações na área de tecnologia.
           </p>
         </div>
       ),
