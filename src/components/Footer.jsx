@@ -4,7 +4,7 @@ import '../styles/components/Footer.css'; // Caminho corrigido
 const Footer = () => {
   return (
     <footer className="footer">
-      <p>©{new Date().getFullYear()} Portfólio do Bhe. Todos os direitos reservados.</p>
+      <p>©{new Date().getFullYear()} Portfólio de Bhernardo. Todos os direitos reservados.</p>
     </footer>
   );
 };
