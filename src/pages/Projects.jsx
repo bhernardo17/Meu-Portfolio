@@ -14,6 +14,11 @@ const Projects = () => {
       description: 'Sistema de Gestão de Contratos de Sistemas da PMF. Funcional na prefeitura porém por conta de ser um sistema privado não tenho autorização para mostrar o código.',
       link: '#',
     },
+    {
+      title: 'Minhoca na Cabeça',
+      description: 'Em Desenvolvimento...',
+      link: '#',
+    },
   ];
 
   return (
