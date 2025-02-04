@@ -7,7 +7,7 @@ function Servico() {
       id: 1,
       titulo: "Criação de Logos",
       descricao:
-        "Desenvolvimento de logos profissionais utilizando Figma, refletindo a identidade única da sua marca.",
+        "Desenvolvimento de logos utilizando Figma, refletindo a identidade única da sua marca.",
       icone: "🎨",
       botaoTexto: "Ver Galeria",
       link: "#galeria-logos",
