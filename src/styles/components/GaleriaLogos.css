@@ -21,7 +21,7 @@
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Reduz o tamanho mínimo dos contêineres */
     gap: 1rem;
     padding: 1rem;
-    max-width: 800px; /* Limita a largura máxima da galeria */
+    max-width: 1200px; /* Limita a largura máxima da galeria */
     margin: 0 auto; /* Centraliza a galeria na página */
   }
   

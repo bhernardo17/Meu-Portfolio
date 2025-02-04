@@ -1,6 +1,7 @@
 .about {
     background: linear-gradient(180deg, #387091, #121212); /* Gradiente de fundo */
     color: #e0e0e0; /* Texto claro */
+    padding: 40px;
 }
 
 .about h2 {

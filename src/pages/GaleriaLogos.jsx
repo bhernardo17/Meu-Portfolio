@@ -32,21 +32,28 @@ const GaleriaLogos = () => {
         <div className="logo-item">
           <img
             src="/images/logo-bh.png" 
-            alt="Logo 3"
+            alt="Logo 4"
             className="logo-image"
           />
         </div>
         <div className="logo-item">
           <img
-            src="/images/Frame33.png" 
-            alt="Logo 3"
+            src="/images/iepe.png" 
+            alt="Logo 5"
             className="logo-image"
           />
         </div>
         <div className="logo-item">
           <img
             src="/images/frame36.png" 
-            alt="Logo 3"
+            alt="Logo 6"
+            className="logo-image"
+          />
+        </div>
+        <div className="logo-item">
+          <img
+            src="/images/gruip.png" 
+            alt="Logo 7"
             className="logo-image"
           />
         </div>
