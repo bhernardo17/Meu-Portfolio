@@ -1,5 +1,7 @@
 Meu Portfólio Pessoal 🌟
 
+link: www.bhernardo.com
+
 Bem-vindo ao repositório do meu portfólio pessoal! Este projeto foi criado para apresentar minhas habilidades, projetos e trajetória como desenvolvedor.
 🖥️ Sobre o Projeto
 
