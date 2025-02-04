@@ -8,7 +8,7 @@ const Contact = () => {
       <p>Email: bhernardooficial@gmail.com</p>
       <p>GitHub: <a href="https://github.com/bhernardo17" target="_blank" rel="noopener noreferrer">@bhernardo17</a></p>
       <p>LinkedIn: <a href="https://www.linkedin.com/in/bhernardo-ramos-vieira-50b343272/" target="_blank" rel="noopener noreferrer">Meu LinkedIn</a></p>
-      <p>WhatsApp: <a href="#" target="_blank" rel="noopener noreferrer">+55 (48) 99994-3514</a></p>
+      {/* <p>WhatsApp: <a href="#" target="_blank" rel="noopener noreferrer"></a></p> */}
     </section>
   );
 };
