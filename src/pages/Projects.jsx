@@ -12,7 +12,7 @@ const Projects = () => {
     {
       title: 'PGS',
       description: 'Sistema de Gestão de Contratos de Sistemas da PMF. Funcional na prefeitura porém por conta de ser um sistema privado não tenho autorização para mostrar o código.',
-      link: '#',
+      link: 'https://pgs.pmf.sc.gov.br/',
     },
     {
       title: 'Minhoca na Cabeça',
