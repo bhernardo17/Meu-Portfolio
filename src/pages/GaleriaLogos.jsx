@@ -57,6 +57,13 @@ const GaleriaLogos = () => {
             className="logo-image"
           />
         </div>
+        <div className="logo-item">
+          <img
+            src="/images/biscuit.png" 
+            alt="Logo 8"
+            className="logo-image"
+          />
+        </div>
         {/* Adicione mais logos conforme necessário */}
       </div>
     </section>
