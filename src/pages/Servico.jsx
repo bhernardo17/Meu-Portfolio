@@ -5,6 +5,16 @@ function Servico() {
   const servicos = [
     {
       id: 1,
+      titulo: "Desenvolvimento Web",
+      descricao:
+        "Criação de sites modernos e responsivos para pequenas lojas ou portfólios.",
+      icone: "💻",
+      botaoTexto: "Peça seu Site",
+      link: "#contato",
+      layout: "horizontal",
+    },
+    {
+      id: 2,
       titulo: "Criação de Logos",
       descricao:
         "Desenvolvimento de logos utilizando Figma, refletindo a identidade única da sua marca.",
@@ -14,22 +24,12 @@ function Servico() {
       layout: "horizontal",
     },
     {
-      id: 2,
+      id: 3,
       titulo: "Desenhos Personalizados",
       descricao:
         "Arte digital personalizada para projetos criativos ou presentes únicos.",
       icone: "🖌️",
       botaoTexto: "Solicitar Desenho",
-      link: "#contato",
-      layout: "horizontal",
-    },
-    {
-      id: 3,
-      titulo: "Desenvolvimento Web",
-      descricao:
-        "Criação de sites modernos e responsivos para pequenas lojas ou portfólios.",
-      icone: "💻",
-      botaoTexto: "Peça seu Site",
       link: "#contato",
       layout: "horizontal",
     },
