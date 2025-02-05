@@ -17,7 +17,7 @@ const Projects = () => {
     {
       title: 'Minhoca na Cabeça',
       description: 'Em Desenvolvimento...',
-      link: '#',
+      link: 'https://github.com/bhernardo17/Minhoca-na-Cabeca',
     },
   ];
 
