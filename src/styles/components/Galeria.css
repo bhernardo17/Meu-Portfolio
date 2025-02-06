@@ -1,73 +1,103 @@
 .galeria {
-    padding: 4rem 2rem;
-    background-color: #387091;
-    color: #e0e0e0;
-    text-align: center;
+  padding: 4rem 2rem;
+  background-color: #387091;
+  color: #e0e0e0;
+  text-align: center;
+}
+
+.galeria-titulo {
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.galeria-descricao {
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+}
+
+.galeria-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.galeria-item {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.galeria-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+  background: rgba(255, 255, 255, 0.726);
+}
+
+.galeria-item:hover img {
+  transform: scale(1.1);
+}
+
+.galeria-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilos para desenhos horizontais */
+.galeria-item.horizontal {
+  flex: 1 1 calc(50% - 1rem); /* Ajusta para ocupar metade da linha */
+  max-width: calc(50% - 1rem);
+  aspect-ratio: 16 / 9; /* Proporção widescreen */
+}
+
+/* Estilos para desenhos verticais */
+.galeria-item.vertical {
+  flex: 1 1 calc(33.333% - 1rem); /* Ajusta para ocupar um terço da linha */
+  max-width: calc(33.333% - 1rem);
+  aspect-ratio: 3 / 4; /* Proporção vertical */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .galeria-item.horizontal,
+  .galeria-item.vertical {
+    flex: 1 1 calc(100% - 1rem); /* Ocupa linha inteira em telas menores */
+    max-width: 100%;
   }
-  
+}
+
+/* Estilos para celulares */
+@media (max-width: 480px) {
+  .galeria {
+    padding: 2rem 1rem;
+  }
+
   .galeria-titulo {
-    font-size: 2.5rem;
-    color: #ffffff;
-    margin-bottom: 1rem;
+    font-size: 1.8rem;
   }
-  
+
   .galeria-descricao {
-    margin-bottom: 2rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
-  
+
   .galeria-flex {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
     gap: 1rem;
   }
-  
+
   .galeria-item {
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    margin-bottom: 1rem;
   }
-  
+
   .galeria-item img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    transition: transform 0.3s ease;
-    background: rgba(255, 255, 255, 0.726);
+    height: auto;
   }
-  
-  .galeria-item:hover img {
-    transform: scale(1.1);
-  }
-  
-  .galeria-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
-  }
-  
-  /* Estilos para desenhos horizontais */
-  .galeria-item.horizontal {
-    flex: 1 1 calc(50% - 1rem); /* Ajusta para ocupar metade da linha */
-    max-width: calc(50% - 1rem);
-    aspect-ratio: 16 / 9; /* Proporção widescreen */
-  }
-  
-  /* Estilos para desenhos verticais */
-  .galeria-item.vertical {
-    flex: 1 1 calc(33.333% - 1rem); /* Ajusta para ocupar um terço da linha */
-    max-width: calc(33.333% - 1rem);
-    aspect-ratio: 3 / 4; /* Proporção vertical */
-  }
-  
-  /* Responsividade */
-  @media (max-width: 768px) {
-    .galeria-item.horizontal,
-    .galeria-item.vertical {
-      flex: 1 1 calc(100% - 1rem); /* Ocupa linha inteira em telas menores */
-      max-width: 100%;
-    }
-  }
-  
+}

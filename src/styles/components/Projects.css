@@ -30,18 +30,43 @@
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-.project-card h3 {
-  font-size: 1.6rem;
-  margin-bottom: 0.5rem;
+/* Estilos para tablets */
+@media (max-width: 768px) {
+  .projects {
+    padding: 4rem 1rem;
+  }
+
+  .projects h2 {
+    font-size: 1.5rem;
+  }
+
+  .project-card {
+    width: 100%;
+    max-width: 300px;
+  }
 }
 
-.project-card p {
-  font-size: 1rem;
-  color: #666;
-}
+/* Estilos para celulares */
+@media (max-width: 480px) {
+  .projects {
+    padding: 2rem 0.5rem;
+  }
 
-.project-card a {
-  display: inline-block;
-  margin-top: 1rem;
-  font-weight: bold;
+  .projects h2 {
+    font-size: 1.2rem;
+  }
+
+  .projects-grid {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .project-card {
+    flex: 0 0 auto;
+    width: 80%;
+    max-width: 280px;
+    margin-right: 1rem;
+  }
 }

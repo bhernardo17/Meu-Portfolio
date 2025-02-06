@@ -1,95 +1,81 @@
-/* Estilos gerais do header */
+/* Estilos gerais */
 .header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 97%; /* Corrigido para ocupar 100% da largura */
-  padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(16, 18, 22, 0.9); /* Preto translúcido */
-  backdrop-filter: blur(15px); /* Efeito de desfoque mais acentuado */
-  z-index: 1000;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Sombra mais definida */
-  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transições suaves */
+  padding: 1rem 2rem;
+  background-color: #333;
+  color: #fff;
+  position: relative;
 }
 
-/* Logo */
 .logo {
-  font-size: 1.8rem; /* Aumentei o tamanho para destaque */
+  font-size: 1.8rem;
   font-weight: bold;
-  color: #ffffff; /* Cor branca para maior contraste */
-  text-transform: uppercase; /* Deixei em maiúsculas para maior impacto */
-  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
-/* Lista de navegação */
+.nav {
+  display: flex;
+}
+
 .nav-list {
   display: flex;
-  gap: 2.5rem; /* Mais espaço entre os itens */
+  gap: 2rem;
   list-style: none;
   margin: 0;
   padding: 0;
+  
 }
 
 .nav-list a {
   text-decoration: none;
-  color: #bbbbbb; /* Cinza claro para contraste */
-  font-weight: 500;
-  font-size: 1rem;
-  position: relative;
-  transition: color 0.3s ease;
+  color: #fff;
 }
 
-.nav-list a::after {
-  content: '';
-  position: absolute;
-  bottom: -5px;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background-color: #00adb5; /* Cor moderna azul-esverdeada */
-  transition: width 0.3s ease;
-}
-
-.nav-list a:hover {
-  color: #ffffff; /* Branco no hover */
-}
-
-.nav-list a:hover::after {
-  width: 100%;
-}
-
-/* Ícone do menu mobile */
 .menu-icon {
-  display: none; /* Será visível apenas em telas pequenas */
-  font-size: 1.8rem;
+  display: none;
+  font-size: 2rem;
   cursor: pointer;
-  color: #ffffff;
 }
 
-/* Estilos responsivos para telas menores */
+/* Estilos para tablets */
 @media (max-width: 768px) {
   .nav-list {
-    display: none; /* Esconde a navegação em telas pequenas */
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #333;
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-list.active {
+    display: flex;
   }
 
   .menu-icon {
-    display: block; /* Exibe o ícone do menu mobile */
+    display: block;
   }
 }
 
-/* Quando o menu estiver ativo (adapte com JS se necessário) */
-.nav-list.active {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: 100%; /* Abaixo do header */
-  left: 0;
-  width: 100%;
-  background-color: rgba(18, 18, 18, 0.95); /* Fundo mais escuro para o menu mobile */
-  padding: 1rem;
-  gap: 1rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+/* Estilos para celulares */
+@media (max-width: 480px) {
+  .logo {
+    font-size: 1.6rem;
+  }
+
+  .nav-list {
+    gap: 1rem;
+  }
+  .nav-list a {
+    margin-right: 46rem;
+  }
+
+  .menu-icon {
+    font-size: 2rem;
+    margin-right: 25rem;
+  }
 }

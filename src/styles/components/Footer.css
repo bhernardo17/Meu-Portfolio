@@ -1,12 +1,39 @@
 .footer {
-    background-color: #000000;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
+  background-color: #000000;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.responsive-footer {
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Estilos para tablets */
+@media (max-width: 768px) {
+  .footer {
+    padding: 0.8rem;
   }
-  
+
   .footer p {
-    margin: 0;
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
+}
+
+/* Estilos para celulares */
+@media (max-width: 480px) {
+  .footer {
+    padding: 0.5rem;
+  }
+
+  .footer p {
+    font-size: 0.8rem;
+  }
+}
