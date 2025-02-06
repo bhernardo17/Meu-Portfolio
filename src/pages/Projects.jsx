@@ -19,6 +19,11 @@ const Projects = () => {
       description: 'Em Desenvolvimento...',
       link: 'https://github.com/bhernardo17/Minhoca-na-Cabeca',
     },
+    {
+      title: 'Criador de Tabelas',
+      description: 'Uma aplicação moderna para criação de tabelas personalizadas com suporte a colunas horizontais e verticais, além de exportação para PDF.',
+      link: 'https://github.com/bhernardo17/criador-de-tabelas',
+    }
   ];
 
   return (
