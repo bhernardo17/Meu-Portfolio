@@ -13,7 +13,7 @@ Este portfólio foi desenvolvido com o objetivo de compartilhar meu trabalho, ex
 
 🚀 Tecnologias Utilizadas
 
-    Frontend: HTML, CSS, JavaScript
+    Frontend: HTML, CSS, JavaScript, React
     Bibliotecas e Frameworks: React, TailwindCSS
     Design: Figma
 
