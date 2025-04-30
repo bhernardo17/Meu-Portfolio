@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import "../styles/components/Servico.css";
 
 function Servico() {
@@ -35,41 +36,84 @@ function Servico() {
     },
   ];
 
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.3
+      }
+    }
+  };
+
+  const cardVariants = {
+    hidden: { scale: 0.8, opacity: 0 },
+    visible: {
+      scale: 1,
+      opacity: 1,
+      transition: {
+        duration: 0.5
+      }
+    }
+  };
+
   return (
-    <section id="servico" className="Servico py-12 bg-gray-100">
-      <div className="servico-container text-center mx-auto">
-        <h1 className="servico-titulo text-4xl font-bold mb-4 text-gray-800">
+    <motion.section 
+      id="servico" 
+      className="Servico py-16 bg-gradient-to-b from-gray-50 to-gray-100"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      variants={containerVariants}
+    >
+      <div className="servico-container max-w-7xl mx-auto px-4">
+        <motion.h1 
+          className="servico-titulo text-5xl font-bold mb-6 text-center bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+        >
           Meus Serviços
-        </h1>
-        <p className="servico-descricao text-lg text-gray-600 mb-10">
+        </motion.h1>
+        <motion.p 
+          className="servico-descricao text-xl text-gray-600 mb-12 text-center max-w-2xl mx-auto"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.2 }}
+        >
           Aqui estão os serviços que ofereço para atender às suas necessidades.
-        </p>
+        </motion.p>
         <div className="servico-flex grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {servicos.map((servico) => (
-            <div
+            <motion.div
               key={servico.id}
-              className={`servico-card bg-white shadow-lg p-6 rounded-lg transition-transform transform hover:-translate-y-2 hover:shadow-xl ${servico.layout}`}
+              variants={cardVariants}
+              className="servico-card backdrop-blur-md bg-white/90 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300"
+              whileHover={{ y: -10 }}
             >
-              <div className="servico-icone text-5xl mb-4 text-blue-600">
-                {servico.icone}
+              <div className="p-8">
+                <div className="servico-icone text-6xl mb-6">
+                  {servico.icone}
+                </div>
+                <h2 className="servico-titulo-card text-2xl font-bold mb-4 text-gray-800">
+                  {servico.titulo}
+                </h2>
+                <p className="servico-descricao-card text-gray-600 mb-6 text-lg">
+                  {servico.descricao}
+                </p>
+                <motion.a
+                  href={servico.link}
+                  className="servico-botao inline-block bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold px-6 py-3 rounded-full hover:shadow-lg transition-all duration-300"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  {servico.botaoTexto}
+                </motion.a>
               </div>
-              <h2 className="servico-titulo-card text-2xl font-semibold mb-2 text-gray-800">
-                {servico.titulo}
-              </h2>
-              <p className="servico-descricao-card text-gray-600 mb-6">
-                {servico.descricao}
-              </p>
-              <a
-                href={servico.link}
-                className="servico-botao inline-block bg-blue-600 text-white font-semibold px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors"
-              >
-                {servico.botaoTexto}
-              </a>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }
 

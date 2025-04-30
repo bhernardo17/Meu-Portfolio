@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FaArrowLeft, FaArrowRight, FaCode, FaLaptopCode, FaStar, FaHeart, FaPalette, FaCertificate } from "react-icons/fa";
 import "../styles/components/About.css";
+import { motion } from 'framer-motion';
 
 const About = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -146,29 +147,48 @@ const About = () => {
   };
 
   return (
-    <section id="sobre" className="about">
-      <h2 className="text-3xl font-bold text-center mb-6">Sobre Mim</h2>
-      <div className="carousel-container">
-        <div className="carousel-slide">
-          <h3 className="text-xl font-semibold mb-4">{slides[currentSlide].title}</h3>
-          <div>{slides[currentSlide].content}</div>
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+    >
+      <section id="sobre" className="about">
+        <h2 className="text-3xl font-bold text-center mb-6">Sobre Mim</h2>
+        <div className="carousel-container">
+          <div className="carousel-slide">
+            <h3 className="text-xl font-semibold mb-4">{slides[currentSlide].title}</h3>
+            <div>{slides[currentSlide].content}</div>
+          </div>
+          <div className="carousel-controls flex justify-center mt-4">
+            <button
+              onClick={handlePrev}
+              className="px-4 py-2 bg-gray-300 rounded-l hover:bg-gray-400 flex items-center"
+            >
+              <FaArrowLeft className="mr-2" /> Anterior
+            </button>
+            <button
+              onClick={handleNext}
+              className="px-4 py-2 bg-gray-300 rounded-r hover:bg-gray-400 flex items-center"
+            >
+              Próximo <FaArrowRight className="ml-2" />
+            </button>
+          </div>
         </div>
-        <div className="carousel-controls flex justify-center mt-4">
-          <button
-            onClick={handlePrev}
-            className="px-4 py-2 bg-gray-300 rounded-l hover:bg-gray-400 flex items-center"
-          >
-            <FaArrowLeft className="mr-2" /> Anterior
-          </button>
-          <button
-            onClick={handleNext}
-            className="px-4 py-2 bg-gray-300 rounded-r hover:bg-gray-400 flex items-center"
-          >
-            Próximo <FaArrowRight className="ml-2" />
-          </button>
-        </div>
-      </div>
-    </section>
+      </section>
+    </motion.div>
+  );
+};
+
+export const RevealOnScroll = ({ children }) => {
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.8 }}
+    >
+      {children}
+    </motion.div>
   );
 };
 
