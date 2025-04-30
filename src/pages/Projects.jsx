@@ -20,6 +20,11 @@ const Projects = () => {
       link: 'https://github.com/bhernardo17/Minhoca-na-Cabeca',
     },
     {
+      title: 'Projeto PII',
+      description: 'Site para o Programa de Incentivo à Inovação (PII).',
+      link: 'https://pii.pmf.sc.gov.br/',
+    },
+    {
       title: 'Criador de Tabelas',
       description: 'Uma aplicação moderna para criação de tabelas personalizadas com suporte a colunas horizontais e verticais, além de exportação para PDF.',
       link: 'https://github.com/bhernardo17/criador-de-tabelas',
